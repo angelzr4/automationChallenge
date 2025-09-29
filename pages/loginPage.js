@@ -31,7 +31,7 @@ exports.LoginPage = class LoginPage {
     * Description: The method waits 2 secs for the element to be available in page and clicks on button
     */
     async homeLoginButtonClick() {
-        await this.homeLoginButton.waitFor({ state: 'visible', timeout: 2000 })
+        await this.homeLoginButton.waitFor({ state: 'visible', timeout: 3000 })
         await this.homeLoginButton.click()
     }
 
@@ -40,7 +40,7 @@ exports.LoginPage = class LoginPage {
     * Description: The method waits 2 secs for the element to be available in page and clicks on button
     */
     async registeredUserLoginButtonClick() {
-        await this.registeredUserLoginButton.waitFor({ state: 'visible', timeout: 2000 })
+        await this.registeredUserLoginButton.waitFor({ state: 'visible', timeout: 3000 })
         await this.registeredUserLoginButton.click()
     }
 
@@ -49,7 +49,7 @@ exports.LoginPage = class LoginPage {
     * Description: The method waits 2 secs for the element to be available in page, clears the textbox and fill it with the received data as a parameter
     */
     async emailTextboxFill(email) {
-        await this.emailTextbox.waitFor({ state: 'visible', timeout: 2000 })
+        await this.emailTextbox.waitFor({ state: 'visible', timeout: 3000 })
         await this.emailTextbox.clear()
         await this.emailTextbox.fill(email) 
     }
@@ -59,7 +59,7 @@ exports.LoginPage = class LoginPage {
     * Description: The method waits 2 secs for the element to be available in page, clears the textbox and fill it with the received data as a parameter
     */
     async passwordTextboxFill(password) {
-        await this.passwordTextbox.waitFor({ state: 'visible', timeout: 2000 })
+        await this.passwordTextbox.waitFor({ state: 'visible', timeout: 3000 })
         await this.passwordTextbox.clear()
         await this.passwordTextbox.fill(password)
     }
@@ -70,7 +70,7 @@ exports.LoginPage = class LoginPage {
     * Description: The method waits 2 secs for the element to be available in page and checks the checkbox element
     */
     async rememberMeCheckboxState() {
-        await this.rememberMeCheckbox.waitFor({ state: 'visible', timeout: 2000 })
+        await this.rememberMeCheckbox.waitFor({ state: 'visible', timeout: 3000 })
         await this.rememberMeCheckbox.check()
     }
 
@@ -79,7 +79,7 @@ exports.LoginPage = class LoginPage {
     * Description: The method waits 2 secs for the element to be available in page and clicks on button
     */
     async finalLoginButtonClick() {
-        await this.finalLoginButton.waitFor({ state: 'visible', timeout: 2000 })
+        await this.finalLoginButton.waitFor({ state: 'visible', timeout: 3000 })
         await this.finalLoginButton.click()
     }
 

@@ -20,7 +20,7 @@
     *              if "element exists", then performs the {callback} action and returns, if "element is not present" the function
     *              function returns to test execution.
     */
-    async function popupListener(page, captchaButton, callback, timeout = 100){
+    async function popupListener(page, captchaButton, callback, timeout = 200){
         //Get the current timestamp in milliseconds at the moment this function is called
         const start = Date.now()
 

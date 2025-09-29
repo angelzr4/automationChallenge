@@ -52,6 +52,30 @@ DEPENDENCIES:
 6. Open VS Code. click on "File/Open Folder and select your local clone directory.
 
 
+## FOLDER STRUCTURE
+├── config/                      # Configuration values
+│   └── .env
+├── data/                        # External data source (created on runtime)
+│   └── **.xlsx
+├── pages/                       # Page Object Models
+│   └── homePage.js
+│   └── loginPage.js
+├── playwright-report/           # Execution HTML Report  (created on runtime)
+│   └── index.html
+├── tests/                       # Test specs
+│   └── QATechnicalTest.spec.js
+├── utils/                       # Helper utilities (e.g., Excel reader, reCaptcha Handler)
+│   └── excelHandler.js
+│   └── popupHandler.spec.js
+├── playwright.config.ts         # Playwright configuration
+├── package.json
+├── package-lock.json
+├── RunTest_Img.PNG              # Image used in README.md as a reference
+├── RunTest_Img.PNG              # Image used in README.md as a reference
+├── ReleaseNotes.txt             # Change history (commit changes)
+└── README.md
+
+
 ## EXECUTE TEST
 
 To run the test:

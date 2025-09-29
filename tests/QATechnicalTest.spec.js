@@ -111,10 +111,10 @@ test('Automation Challenge', async({page}) => {
     */      
     await test.step('Enter data into respective fields and submit the form', async () => {
         try{
-            auxCaptchaButton = homePage.captchaButton
+            auxCaptchaButton = await homePage.captchaButton
             for (const dataRow of data) {
                 //Looks for the reCaptcha window to be displayed and perform the action required by reCaptcha.
-                await popupListener(page, homePage.captchaButton, async(page, auxCaptchaButton) => {auxCaptchaButton.click()})
+                await popupListener(page, auxCaptchaButton, async(page, auxCaptchaButton) => {auxCaptchaButton.click()})
                 
                 //Fills excel data into respective page fields
                 await homePage.companyNameTextboxFill(dataRow.company_name)
@@ -148,8 +148,14 @@ test('Automation Challenge', async({page}) => {
 */
 test.afterEach('Teardown', async({page}) => {
     await test.step('Attach excel file to report', async () => {
-
+        //Waits for 2 seconds to see achievement and attach screenshot and downloaded excel file
+        const screenhotBuffer = await page.screenshot({fullPage: true})
+        await page.waitForTimeout(2000)
+        await test.info().attach('Challenge achieved', {contentType: 'image/png', body: screenhotBuffer})
         await test.info().attach('Downloaded Excel Data', {contentType: 'application/zip', path: path.resolve(__dirname, process.env.DATA_PATH)})
+
+        //Close driver
+        await page.close()
     })
 
 })

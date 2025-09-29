@@ -1,0 +1,23 @@
+CHANGE HISTORY
+
+=========================================================================================================
+Commit: v2.0
+Changes: Official
+
+=========================================================================================================
+Commit: Updated gitignore
+Changes: 
+    - Updated gitignore to remove data, playwrigth-report, test-results, test-examples folders and files.
+
+=========================================================================================================
+Commit: v3.0
+Changes:
+    - Updated README.md with folder structure.
+    - Created ReleaseNotes.txt file for change history details.
+    - Increment polling timer in popupHandler function from 100mS to 200mS.
+    - Increment timeout timers for locators visibility.
+    - Updated "afterEach" hook:
+        - Add screenshot after challenge is completed and attached it to report.
+        - Add "page.close()" after test is completed.
+
+=========================================================================================================

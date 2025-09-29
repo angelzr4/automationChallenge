@@ -33,7 +33,7 @@ exports.HomePage = class HomePage {
     * Description: The method waits 2 secs for the element to be available in page, clears the textbox and fill it with the received data as a parameter
     */
     async companyNameTextboxFill(companyName) {
-        await this.companyNameTextbox.waitFor({ state: 'visible', timeout: 2000 })
+        await this.companyNameTextbox.waitFor({ state: 'visible', timeout: 3000 })
         await this.companyNameTextbox.clear()
         await this.companyNameTextbox.fill(companyName)
     }
@@ -43,7 +43,7 @@ exports.HomePage = class HomePage {
     * Description: The method waits 2 secs for the element to be available in page, clears the textbox and fill it with the received data as a parameter
     */
     async addressTextboxFill(address) {
-        await this.addressTextbox.waitFor({ state: 'visible', timeout: 2000 })
+        await this.addressTextbox.waitFor({ state: 'visible', timeout: 3000 })
         await this.addressTextbox.clear()
         await this.addressTextbox.fill(address)
     }
@@ -53,7 +53,7 @@ exports.HomePage = class HomePage {
     * Description: The method waits 2 secs for the element to be available in page, clears the textbox and fill it with the received data as a parameter
     */
     async einTextboxFill(ein) {
-        await this.einTextbox.waitFor({ state: 'visible', timeout: 2000 })
+        await this.einTextbox.waitFor({ state: 'visible', timeout: 3000 })
         await this.einTextbox.clear()
         await this.einTextbox.fill(ein) 
     }
@@ -63,7 +63,7 @@ exports.HomePage = class HomePage {
     * Description: The method waits 2 secs for the element to be available in page, clears the textbox and fill it with the received data as a parameter
     */
     async sectorTextboxFill(sector) {
-        await this.sectorTextbox.waitFor({ state: 'visible', timeout: 2000 })
+        await this.sectorTextbox.waitFor({ state: 'visible', timeout: 3000 })
         await this.sectorTextbox.clear()
         await this.sectorTextbox.fill(sector)
     }
@@ -74,7 +74,7 @@ exports.HomePage = class HomePage {
     * Description: The method waits 2 secs for the element to be available in page, clears the textbox and fill it with the received data as a parameter
     */
     async automationToolTextboxFill(automationTool) {
-        await this.automationToolTextbox.waitFor({ state: 'visible', timeout: 2000 })
+        await this.automationToolTextbox.waitFor({ state: 'visible', timeout: 3000 })
         await this.automationToolTextbox.clear()
         await this.automationToolTextbox.fill(automationTool)
     }
@@ -84,7 +84,7 @@ exports.HomePage = class HomePage {
     * Description: The method waits 2 secs for the element to be available in page, clears the textbox and fill it with the received data as a parameter
     */
     async annualSavingTextboxFill(annualSaving) {
-        await this.annualSavingTextbox.waitFor({ state: 'visible', timeout: 2000 })
+        await this.annualSavingTextbox.waitFor({ state: 'visible', timeout: 3000 })
         await this.annualSavingTextbox.clear()
         await this.annualSavingTextbox.fill(annualSaving)
     }
@@ -94,7 +94,7 @@ exports.HomePage = class HomePage {
     * Description: The method waits 2 secs for the element to be available in page, clears the textbox and fill it with the received data as a parameter
     */
     async dateTextboxFill(date) {
-        await this.dateTextbox.waitFor({ state: 'visible', timeout: 2000 })
+        await this.dateTextbox.waitFor({ state: 'visible', timeout: 3000 })
         await this.dateTextbox.clear()
         await this.dateTextbox.fill(date)
     }
@@ -104,7 +104,7 @@ exports.HomePage = class HomePage {
     * Description: The method waits 2 secs for the element to be available in page and clicks on button
     */
     async startButtonClick() {
-        await this.startButton.waitFor({ state: 'visible', timeout: 2000 })
+        await this.startButton.waitFor({ state: 'visible', timeout: 3000 })
         await this.startButton.click()
     }
 
@@ -113,7 +113,7 @@ exports.HomePage = class HomePage {
     * Description: The method waits 2 secs for the element to be available in page and clicks on button
     */
     async downloadExcelButtonClick() {
-        await this.downloadExcelButton.waitFor({ state: 'visible', timeout: 2000 })
+        await this.downloadExcelButton.waitFor({ state: 'visible', timeout: 3000 })
         await this.downloadExcelButton.click()
     }
 
@@ -122,7 +122,7 @@ exports.HomePage = class HomePage {
     * Description: The method waits 2 secs for the element to be available in page and clicks on button
     */
     async submitButtonClick() {
-        await this.submitButton.waitFor({ state: 'visible', timeout: 2000 })
+        await this.submitButton.waitFor({ state: 'visible', timeout: 3000 })
         await this.submitButton.click()
     }
 
